@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    Hiện tại, sản phẩm vẫn còn trong quá trình phát triển, dự kiến thời gian hoàn thiện sản phẩm là
-    ngày <b>18/05/2025</b> <br />
-    Sẽ chuyển tiếp đến mã nguồn hiện tại (chưa hoàn thiện) sau: <span id="t"></span>
-  </body>
-  <script type="module">
-    const timeDisplay = document.getElementById("t");
-    let time = 20;
-
-    const delay = () => new Promise((res) => setTimeout(res, 1000));
-
-    while (time) {
-      timeDisplay.innerText = time--;
-      await delay();
-    }
-    timeDisplay.innerText = 0;
-
-    window.location.href =
-      "https://drive.google.com/drive/folders/1n_mOIa-GzgoceRJaJdb5-lMAO38D9P9m?usp=sharing";
-  </script>
-</html>
+<script>
+  window.location.href =
+    "https://drive.google.com/drive/folders/1n_mOIa-GzgoceRJaJdb5-lMAO38D9P9m?usp=sharing";
+</script>
