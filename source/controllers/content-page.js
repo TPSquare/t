@@ -7,9 +7,8 @@ import prolangsConfig from "../configs/prolangs.js";
 export default new (class {
   run(app) {
     const existingContent = getExistingContent();
-    const languages = Object.keys(existingContent);
-    for (const lang of languages)
-      for (const contentKey of existingContent[lang]) this.renderContent(app, contentKey, lang);
+    const lang = "en";
+    for (const contentKey of existingContent[lang]) this.renderContent(app, contentKey, lang);
   }
 
   async renderContent(app, contentKey, lang) {
