@@ -1,0 +1,16 @@
+export default {
+  contentSelection: "Content selection",
+  copyCode: "Copy code",
+  fullScreen: "Full screen",
+  exitFullScreen: "Exit full screen",
+  delay: "Delay",
+  play: "Play",
+  pause: "Pause",
+  replay: "Replay",
+  settings: "Settings",
+  forward: "Fast forward 5 steps",
+  backward: "Fast backward 5 steps",
+  customizeInput: "Customize input",
+  apply: "Apply",
+  close: "Close",
+};
