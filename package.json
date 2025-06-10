@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --turbopack -p 10000",
     "script:bundle": "node ./scripts/bundle.js",
     "script:fonts": "node ./scripts/fonts.js",
     "script:sync-version": "node ./scripts/sync-version.js",
