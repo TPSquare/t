@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+* {
+  user-select: none;
+}
+
+button,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+button:focus,
+button:focus-visible,
+select:focus,
+select:focus-visible,
+input:focus,
+input:focus-visible {
+  outline: none;
+}
+
+:root {
+  --scrollbar-width: 0.75rem;
+
+  --background-color: #0a0d0f;
+  --foreground-color: #c2c9cf;
+  --highlight-color: #55e5c5;
+  --in-highlight-color: #21282d;
+  --layout-background-color: #181c1f;
+  --float-layout-background-color: #15191c;
+  --brighter-layout-background-color: #21282d;
+  --layout-header-background-color: #0e151a;
+  --layout-sidebar-background-color: #1e2529;
+  --layout-border-color: #383e40;
+  --native-ui-background-color: #0e151a;
+  --native-ui-foreground-color: #414a51;
+  --input-background-color: #111416;
+  --disable-color: #2b3037;
+  --in-disable-color: #485355;
+  --overlay-background-color: #000000;
+  --button-background-color: #363e44;
+}
+
+@layer utilities {
+  .scrollbar-none {
+    --ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  .custom-scrollbar {
+    scrollbar-width: var(--scrollbar-width);
+    scrollbar-color: var(--native-ui-foreground-color) var(--native-ui-background-color);
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+    height: var(--scrollbar-width);
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: var(--native-ui-background-color);
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--native-ui-foreground-color);
+  }
+
+  .spin-button-hidden::-webkit-inner-spin-button,
+  .spin-button-hidden::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .element-scrollbar-horizontal {
+    height: var(--scrollbar-width);
+    background-color: var(--native-ui-background-color);
+  }
+  .element-scrollbar-horizontal > div {
+    position: relative;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: var(--native-ui-foreground-color);
+  }
+
+  .bg-checkerboard {
+    background-image:
+      linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%),
+      linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%);
+    background-size: 20px 20px;
+    background-position:
+      0 0,
+      10px 10px;
+    background-color: #fff;
+  }
+}

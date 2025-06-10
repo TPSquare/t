@@ -1,0 +1,19 @@
+.custom-hex-color-picker .react-colorful__saturation,
+.custom-hex-color-picker .react-colorful__hue {
+  cursor: pointer;
+}
+
+.custom-hex-color-picker .react-colorful__saturation-pointer {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-width: 1.5px;
+}
+
+.custom-hex-color-picker .react-colorful__hue {
+  height: 1rem;
+}
+
+.custom-hex-color-picker .react-colorful__hue-pointer {
+  height: 0.75rem;
+  width: 0.75rem;
+}

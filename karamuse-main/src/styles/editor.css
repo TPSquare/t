@@ -1,0 +1,24 @@
+:root {
+  --layout-space: 0.5rem;
+  --header-layout-space: calc(var(--layout-space) / 2);
+  --header-height: calc(2rem + var(--layout-space));
+  --layout-rounded: 0.5rem;
+  --timeline-fixed-y-height: 2rem;
+  --timeline-left-width: 10rem;
+  --tools-header-height: 4rem;
+
+  --playhead-color: #ff6161;
+  --timeline-audio-rgb: 24, 62, 54;
+  --timeline-lyric-rgb: 62, 86, 168;
+  --timeline-video-rgb: 154, 126, 58;
+  --timeline-image-rgb: 154, 126, 58;
+  --timeline-ruler-background: #10161b;
+  --record-timesetted: yellow;
+  --record-selected: yellowgreen;
+}
+
+@layer utilities {
+  .timeline-item-focused {
+    border: 0.125rem solid var(--highlight-color) !important;
+  }
+}

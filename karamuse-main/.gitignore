@@ -1,0 +1,11 @@
+node_modules
+.next
+build
+tmp
+public/tmp
+
+.env.local
+package-lock.json
+src/configs/serve-url.js
+src/styles/fonts.css
+src/configs/version.js

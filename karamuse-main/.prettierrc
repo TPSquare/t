@@ -1,0 +1,12 @@
+{
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "overrides": [
+    {
+      "files": "*.jsx",
+      "options": {
+        "printWidth": 110628
+      }
+    }
+  ],
+  "printWidth": 100
+}
